@@ -31,7 +31,7 @@ if [[ ! -f $FLAG ]]; then
   curl https://raw.githubusercontent.com/Omaraldarwish/autosu_media/main/requirements_v_1.txt -O
 
   pip install --upgrade pip
-  pip install -r ~/app/requirements_v_1.txt
+  pip install -r requirements_v_1.txt
   pip install aspose.slides
 
   eval "$(grep VERSION_ID /etc/os-release)"
