@@ -42,12 +42,12 @@ if [[ ! -f $FLAG ]]; then
   IFS=$OLD_IFS
   MAJOR_VERSION=$split_version
   sudo tee /etc/yum.repos.d/adoptium.repo << EOM
-  [Adoptium]
-  name=Adoptium
-  baseurl=https://packages.adoptium.net/artifactory/rpm/$ID/$MAJOR_VERSION/\$basearch
-  enabled=1
-  gpgcheck=1
-  gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
+[Adoptium]
+name=Adoptium
+baseurl=https://packages.adoptium.net/artifactory/rpm/$ID/$MAJOR_VERSION/\$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOM
 
   sudo yum -y update
