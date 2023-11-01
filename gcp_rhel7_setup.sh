@@ -6,7 +6,7 @@ if [[ ! -f $FLAG ]]; then
   sudo yum -y install yum-utils
   sudo yum-builddep python3
 
-  sudo yum install -y scl-utils git gcc zlib-devel bzip2-devel sqlite-devel openssl-devel libgdiplus
+  sudo yum install -y scl-utils git gcc zlib-devel bzip2-devel sqlite-devel openssl-devel libgdiplus make
   git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
   echo "## pyenv configs" >> $HOME/.bashrc && \
       var='export PYENV_ROOT="$HOME/.pyenv"' && \
