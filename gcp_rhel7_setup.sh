@@ -33,6 +33,7 @@ if [[ ! -f $FLAG ]]; then
   pip install --upgrade pip
   pip install -r requirements_v_1.txt
   pip install aspose.slides
+  pip install uwsgi
 
   eval "$(grep VERSION_ID /etc/os-release)"
   eval "$(grep ^ID= /etc/os-release)"
