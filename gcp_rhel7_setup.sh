@@ -34,6 +34,7 @@ if [[ ! -f $FLAG ]]; then
   pip install -r requirements_v_1.txt
   pip install aspose.slides
   pip install uwsgi
+  pip install apscheduler
 
   eval "$(grep VERSION_ID /etc/os-release)"
   eval "$(grep ^ID= /etc/os-release)"
